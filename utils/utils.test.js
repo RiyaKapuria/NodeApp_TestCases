@@ -7,9 +7,23 @@ it('should add two numbers', () => {
   expect(res).toBe(44).toBeA('number');
 });
 
-it('should square a numbers', () => {
+it('should aync add two numbers', (done) => {
+  var res = utils.asyncAdd(4, 3, (sum) => {
+    expect(sum).toBe(7).toBeA('number');
+    done();
+  });
+});
+
+it('should square a number', () => {
   var res = utils.square(5);
   expect(res).toBe(25).toBeA('number');
+});
+
+it('should aync square a number', (done) => {
+  var res = utils.asyncSquare(5, (square) => {
+    expect(square).toBe(25).toBeA('number');
+    done();
+  });
 });
 
 it('should verify first and last name', () => {
