@@ -1,0 +1,18 @@
+{
+  "name": "nodeapp_testcases",
+  "version": "1.0.0",
+  "description": "Testing Your Applications",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha **/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@riya-personal:RiyaKapuria/NodeApp_TestCases.git"
+  },
+  "author": "Riya Kapuria",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  }
+}
